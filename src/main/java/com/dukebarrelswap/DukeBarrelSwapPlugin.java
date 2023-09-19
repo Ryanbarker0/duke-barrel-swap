@@ -26,8 +26,10 @@ public class DukeBarrelSwapPlugin extends Plugin
 	private DukeBarrelSwapConfig config;
 
 	public static final int DUKE_SUCELLUS_REGION_ID = 12132;
-	public static final int UNCRUSHED_MUSHROOM_ID = 28341;
-	public static final int CRUSHED_MUSHROOM_ID = 28342;
+	public static final int UNCRUSHED_MUSCA_MUSHROOM_ID = 28341;
+	public static final int CRUSHED_MUSCA_MUSHROOM_ID = 28342;
+	public static final int UNCRUSHED_ARDER_MUSHROOM_ID = 28345;
+	public static final int CRUSHED_ARDER_MUSHROOM_ID = 28346;
 
 
 	@Override
@@ -89,7 +91,7 @@ public class DukeBarrelSwapPlugin extends Plugin
 	{
 		for (final Item item : itemContainer.getItems())
 		{
-			if (UNCRUSHED_MUSHROOM_ID == item.getId())
+			if (UNCRUSHED_MUSCA_MUSHROOM_ID == item.getId() || UNCRUSHED_ARDER_MUSHROOM_ID == item.getId())
 			{
 				return true;
 			}
